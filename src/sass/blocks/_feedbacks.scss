@@ -1,0 +1,50 @@
+.feedbacks {
+    margin-top: 3px;
+
+    &__items {
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    &__item {
+        display: flex;
+        // margin: 0 left;
+    }
+    &__img {
+        max-width: 169px;
+        max-height: 169px;
+
+    }
+    &__name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__undername {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 6px;
+    }
+    &__descr {
+        margin-top: 14px;
+        max-width: 658px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.25;
+        br {
+            line-height: 1;
+        }
+    }
+    &__line {
+        width: 100%;
+        margin-top: 45px;
+        margin-bottom: 50px;
+    }
+    &__text {
+        max-width: 670px;
+        margin-left: 62px;
+    }
+}
