@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
-                    <img src="icons/logo.png" alt="logo">
+                    <img src="icons/logo.png" alt="logo" class="fadeInUp animated">
                 </a>
                 <div class="header__official">
                     Официальный представитель
@@ -22,7 +23,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button data-modal="consultation" class="button">заказать звонок</button>
                 </div>
             </header>
             <div class="promo__wrapper">
@@ -42,7 +43,7 @@
                         Ответим<br> на все вопросы
                     </div>
                 </div>
-                <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
                     <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -55,13 +56,13 @@
             <h2 class="pluses__title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="pluses__items">
                 <div class="pluses__item">
-                    <img src="icons/cup.png" alt="cup"> <br>
+                    <img src="icons/cup.png" alt="cup" class="fadeInUp animated"> <br>
                     <div class="pluses__titledescr">Делимся опытом</div>
                     <div class="pluses__descr">Наши сотрудники всегда готовы <br>поделиться своим опытом,<br> 
                         так как сами бегают полумарафоны,<br> переплыли Босфор, готовятся к<br> соревнованиям по триатлону!</div>
                 </div>
                 <div class="pluses__item">
-                    <img src="icons/heart.png" alt="heart"> <br>
+                    <img src="icons/heart.png" alt="heart" class="advantages__icn_animated"> <br>
                     <div class="pluses__titledescr">Заботимся о здоровье</div>
                     <div class="pluses__descr">Мы работаем для того, <br>
                         чтобы Ваши занятия спортом шли на<br> пользу Вашему здоровью и были в<br> радость Вам и Вашим близким!
@@ -88,9 +89,9 @@
                 Просто заполните форму заявки <br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон" >
                 <input name="email" required placeholder="Ваш e-mail" type="email">                
 
                 <button class="button button_submit">заказать консультацию</button>
@@ -120,7 +121,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_ft1.jpg" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT1111</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -278,7 +279,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/polar_ft1.jpg" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT111</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -362,7 +363,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="feedbacks__items">
-                <div class="feedbacks__item">
+                <div class="feedbacks__item fadeInUp animated">
                     <img src="img/review_1.png" alt="review" class="feedbacks__img">
                     <div class="feedbacks__text">
                         <div class="feedbacks__name">
@@ -427,8 +428,8 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430307459399!2d37.64480731608912!3d55.76839799825631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1610548075621!5m2!1sru!2sru" width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
-            <a href="tel:+74999228974" clase="footer_phone">8 (499) 922-89-74</a>
-            <div class="footer_social">
+            <a href="tel:+74999228974" class="footer__phone">8 (499) 922-89-74</a>
+            <div class="footer__social">
                 <a href="#" class="footer__social-item"><img src="icons/fb.png" alt="facebook"></a>
                 <a href="#" class="footer__social-item"><img src="icons/ins.png" alt="instagram"></a>
                 <a href="#" class="footer__social-item"><img src="icons/pint.png" alt="pinterest"></a>
@@ -436,9 +437,47 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" >
+                <input name="email" placeholder="Ваш e-mail" type="email">                
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" >
+                <input name="email" placeholder="Ваш e-mail" type="email">                
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!</div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup"><img src="icons/chevron-circle-up-solid.svg" alt="up"></a>
+    
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"> </script>
 </body>
 </html>

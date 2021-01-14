@@ -24,9 +24,13 @@
         font-size: 18px;
         font-weight: 700;
         text-decoration: none;
+        transition: 0.5s all;
         &:hover {
-            color: #fff;
+            color: rgb(0, 0, 0);
             text-decoration: none;
+            transform: scaleY(1.1);
+            text-shadow: 10px 10px 10px #ff0000;
+            
         }
     }
     &__contacts {

@@ -47,6 +47,11 @@
             color: $main-color;
             text-transform: uppercase;
             text-decoration: underline;
+            transition: 0.5s all;
+            &:hover {
+                text-shadow: 10px 10px 5px #05c21e;
+                color: #ffffff;
+            }
         }
     }
 }
